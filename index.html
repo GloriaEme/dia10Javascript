@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPBASIC</title>
+</head> 
+    <script> 
+      //Aixó comentari sencill
+       console.log ("Abans del body")
+
+       /*comentari llarg 
+        de més de una lína 
+        i hasta 3 */
+
+        var elMeuNom="Gloria"
+        console.log(" El contingut de la variable és",elMeuNom,"i el tipus de variable és",typeof elMeuNom)
+         
+        var laMevaEdat= 52
+        console.log (laMevaEdat)
+        console.log ("la meva edat és", laMevaEdat, "el tipus de variable és", typeof laMevaEdat)
+
+        
+        function suma (a,b){
+            return a+b
+        }
+        var resultat= suma (10,20)
+        console.log (resultat)
+        console.log(suma(300,12))
+
+        alert(suma(4,4))
+
+
+
+ function mostraInformació(laVariable)
+        {
+
+            console.log("Contingut",laVariable)
+            console.log("Tipus",typeof(laVariable))
+
+            let esArray= Array.isArray(laVariable)
+            console.log("És array", esArray)
+        }
+         var variable1= "Jordi"
+         var variable2= 13
+         var variable3= false
+
+         mostraInformació(variable1)
+         mostraInformació(variable2)
+         mostraInformació(variable3)
+
+         alert (variable1)         
+         
+         
+  var suma2 = function(a,b){
+
+    return a+b
+  }
+
+  mostraInformació(suma2)
+  console.log("resultat suma2 és",suma2(5,1))
+
+
+  var noms= ["Jordi","Pere","Laura"]
+  var persona= {
+    nom:"Jordi",
+    dni:"402356520"
+  }
+  mostraInformació(noms)
+
+
+
+
+         
+
+
+
+
+
+    </script>
+<body>
+    <h1 style="color:#FF0000"> Dia 10</h1>
+    
+</body>
+
+  <script> 
+    console.log ("Deprés del body")
+   </script>
+</html>
