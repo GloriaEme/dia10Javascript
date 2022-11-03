@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercici1</title>
+</head>
+
+<script>
+
+    
+    //trobar el numero més alt (imprimir consola)
+
+
+    //con for + if MAYOR
+    
+    var numeros= [40,30,12,200,4000,15];
+        maximo=0;
+
+    for(var i=0,len=numeros .length;i<len;i++){
+       if(maximo < numeros [i]){
+                maximo = numeros [i];
+
+        }
+    }
+    console.log(maximo)  //  4000
+
+
+
+    //con for + if MENOR
+
+
+    var numeros= [40,30,12,200,4000,15];
+        minimo=0;
+
+    for(var i=0; i<numeros.length; i++){
+       if(numeros [i]<minimo){
+                minimo = numeros [i];
+
+        }
+        console.log(maximo)  //  4000
+    
+    }
+    /* Explicacion del código superior.
+Primero se declara un arreglo que contendrá nuestros números.
+Segundo, se crea una variable máxima con valor 0(cero)
+Tercero, se utilizará el ciclo For para recorrer el arreglo
+Cuarto, se usará una condicional para comprobar el número mayor.
+Quinto, se imprime la variable máxima, con el valor mayor.
+ */
+    
+ 
+
+
+ 
+ // con  FUNCION Match.max
+
+    var mayor = Math.max(30,12,200,4000,15);   
+    
+    console.log(mayor)   //  4000
+    document.write(mayor)
+
+    /* Explicacion del código superior
+Primero, se crea una variable con nombre mayor que contendrá la Función MATH.max
+Segundo, se imprime la variable. */
+
+   
+
+    // con  FUNCION Match.min
+
+    var menor = Math.min(30,12,200,4000,15);   
+    
+    console.log(menor)   //  12
+    document.write(menor)
+
+    /* Explicacion del código superior
+Primero, se crea una variable con nombre menor que contendrá la Función MATH.max
+Segundo, se imprime la variable. */
+
+
+
+//TROBAR POSICIO ELEMENT LAURA
+
+    var noms= ["Jordi","Dani","Laura","Eva"];
+      
+    noms.forEach(function(el,pos){
+        if(el === "Laura"){
+            console.log("La posicio de Laura es:",pos) // ...es:2
+
+        }
+       })
+
+
+    var posicion=noms.indexOf("Laura");
+       console.log("La posicion de Laura es:",posicion)  // ...es:2
+       
+
+
+
+
+ //CONTAR ELS TEXTES // CONTAR ELS NUMEROS  
+ 
+      var coses= ["Jordi",3,"Laura",2,3,"Dani","Sandra",3,6]
+
+      var numeroDeNoms= 0;
+      var numeroDeNumeros= 0;
+
+
+      var noms=["Jordi","Laura","Dani","Sandra"];       //array
+        console.log(noms.length)
+
+      var numeros=[3,2,3,3,6];    //array
+
+   
+
+
+
+
+
+</script>
+
+<body>
+    <h1> Exercici1</h1>
+    
+</body>
+
+</html>
