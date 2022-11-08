@@ -9,6 +9,7 @@
 <meta charset="utf-8">
         <title>Contador Button</title>
         <a href="" class="boton_1"></a>
+        
 
         <style >
             #areaContador {
@@ -20,13 +21,25 @@
             }
         </style>
 
+        <style >
+          #areaContador2 {
+           font-size: 40px;
+           font-weight: bold;
+           color: rgb(107, 20, 220);
+          font-family: impact;
+            margin: 20px;
+         }
+         </style>
+
         
 
     </head>
     <body>
-        <button id="boton_1">PUSH HERE</button>
+       
+        <button id="boton_1">PUSH HERE up</button>
         <p id="areaContador"></p>
-        <script type="text/javascript">
+       
+       <script type="text/javascript">
             var botonElement = document.getElementById("boton_1");
             var pElement = document.getElementById("areaContador");
             var contador = 0;
@@ -35,5 +48,24 @@
                 pElement.textContent = contador;
             }
         </script>
+         
+
+         <a href="" class="boton_2"></a>
+
+        <button id="boton_2">PUSH HERE down</button>
+        <p id="areaContador2"></p>
+       
+       <script type="text/javascript">
+            var botonElement = document.getElementById("boton_2");
+            var pElement = document.getElementById("areaContador");
+            var contador = 0;
+            botonElement.onclick = function () {
+                contador--;
+                pElement.textContent = contador;
+            }
+        </script>
+
+
+
     </body>
 </html>
