@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Button</title>
+</head>
+<meta charset="utf-8">
+        <title>Contador Button</title>
+        <a href="" class="boton_1"></a>
+
+        <style >
+            #areaContador {
+                font-size: 40px;
+                font-weight: bold;
+                color: crimson;
+                font-family: impact;
+                margin: 20px;
+            }
+        </style>
+
+        
+
+    </head>
+    <body>
+        <button id="boton_1">PUSH HERE</button>
+        <p id="areaContador"></p>
+        <script type="text/javascript">
+            var botonElement = document.getElementById("boton_1");
+            var pElement = document.getElementById("areaContador");
+            var contador = 0;
+            botonElement.onclick = function () {
+                contador++;
+                pElement.textContent = contador;
+            }
+        </script>
+    </body>
+</html>

@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="desvarregarausuaris()">
+       Descarregar usuaris</button>
+    
+
     <script>
-        console.log("Començo")
+
+        function desvarregarausuaris(){
+            console.log("Descarregar usuaris...")
         fetch('https://dummyjson.com/users') //que queremos que baje
         .then(res=>res.json()) //convierte los datos en json
         .then(function(resposta){  //
@@ -16,16 +22,30 @@
               console.log(typeof resposta)
               resposta.users.forEach(
                 function(usuari,posicio){
-                 document.write("<h1>"+usuari.firstName+"("+posicio+")"+"</h1>")
+                 document.write("<h1>"+usuari.firstName+("+posicio+")</h1>")
+                
+              })
+
+
+        }
+        /* console.log("Començo")
+        fetch('https://dummyjson.com/users') //que queremos que baje
+        .then(res=>res.json()) //convierte los datos en json
+        .then(function(resposta){  //
+              console.log(resposta)
+              console.log(typeof resposta)
+              resposta.users.forEach(
+                function(usuari,posicio){
+                 document.write("<h1>"+usuari.firstName+("+posicio+")</h1>")
 
               }
               )
                 
-              });
+              })
                 
      
 
-
+ */
             // res =>(
             //     console.log("Ja estic")
             //     console.log(res)
@@ -35,7 +55,7 @@
 
         
 
-        console.log ("Vaig fent...")
+        // console.log ("Vaig fent...")
 
 
 
